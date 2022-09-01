@@ -64,4 +64,18 @@ h3 b {
   background: #fff;
   box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff,
     0 0 50px #fff;
+  animation: animateSquare 2s linear infinite;
+  transform-origin: 75px;
+}
+
+@keyframes animateSquare {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+  75%,
+  90%,
+  100% {
+    transform: rotate(180deg);
+  }
 }
