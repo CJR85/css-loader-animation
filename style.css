@@ -20,6 +20,16 @@ body {
   width: 150px;
   height: 150px;
   // background: rgba(255, 255, 255, 0.1);
+  animation: animate 24s steps(12) infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 h3 {
